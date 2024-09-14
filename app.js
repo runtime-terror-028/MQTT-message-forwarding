@@ -9,6 +9,9 @@ const TOPIC = [
     "maintenace/#"
 ];
 
+const MAC_ADDRESS = getServerMacAddress();
+const SIDE_ID = convertMacToSiteId(MAC_ADDRESS);
+
 //--|Local MQTT|--
 const LOCAL_CLIENT_ID = MAC_ADDRESS;
 const LOCAL_MQTT_USERNAME = "nuez";
@@ -21,8 +24,6 @@ const TARGET_MQTT_USERNAME = "nuez";
 const TARGET_MQTT_PASSWORD = "emqx@nuez";
 const TARGET_MQTT_IP = "mqtt://broker.emqx.io:1883"
 
-const MAC_ADDRESS = getServerMacAddress();
-const SIDE_ID = convertMacToSiteId(MAC_ADDRESS);
 
 // MQTT Options and Client Setup
 const LOCAL_MQTT_OPTIONS = {
