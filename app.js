@@ -1,5 +1,9 @@
 const mqtt = require('mqtt');
 const os = require('os');
+const express = require('express');
+const app = express();
+
+const PORT = 7000;
 
 const TOPIC = [
     "water-consumption-data",
@@ -119,3 +123,9 @@ function publish(topic, payload) {
         };
     });
 };
+
+
+
+app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
+});
