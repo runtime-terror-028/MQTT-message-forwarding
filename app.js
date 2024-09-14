@@ -26,7 +26,7 @@ const LOCAL_MQTT_IP = "mqtt://localhost:1883"
 const TARGET_CLIENT_ID = "mqttx_1ad589f0";
 const TARGET_MQTT_USERNAME = "nuez";
 const TARGET_MQTT_PASSWORD = "emqx@nuez";
-const TARGET_MQTT_IP = "mqtt://broker.emqx.io:1883"
+const TARGET_MQTT_IP = "mqtts://smart.nuez.tech:7883"
 
 
 // MQTT Options and Client Setup
