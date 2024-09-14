@@ -10,10 +10,10 @@ const TOPIC = [
 ];
 
 //--|Local MQTT|--
-const LOCAL_CLIENT_ID = "mqttx_de337f92";
+const LOCAL_CLIENT_ID = MAC_ADDRESS;
 const LOCAL_MQTT_USERNAME = "nuez";
 const LOCAL_MQTT_PASSWORD = "emqx@nuez";
-const LOCAL_MQTT_IP = "mqtt://broker.emqx.io:1883"
+const LOCAL_MQTT_IP = "mqtt://localhost:1883"
 
 //--|Target MQTT|--
 const TARGET_CLIENT_ID = "mqttx_1ad589f0";
